@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Login">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerInParent="true">
+            </ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txtsesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iniciar sesión"
+                android:textAlignment="center"
+                android:textColor="#0066CB"
+                android:textSize="24dp" />
+            <TextView
+                android:id="@+id/txtusuario"
+                android:text="Usuario"
+                android:layout_below="@+id/txtsesion"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0066CB"
+                android:textSize="18dp"
+                android:layout_centerInParent="true"
+                />
+
+            <EditText
+                android:id="@+id/usuario"
+                android:layout_below="@id/txtusuario"
+                android:hint="elbagallo99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/txtpassword"
+                android:text="Contraseña"
+                android:layout_below="@+id/usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0066CB"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_below="@+id/txtpassword"
+                android:hint="********"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="58dp"
+                android:text="Ingresar">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/btnVolver"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crear cuenta"
+                android:textColor="#0066CB"
+                android:layout_below="@+id/btnIngresar"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</layout>
