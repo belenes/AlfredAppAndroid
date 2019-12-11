@@ -18,13 +18,7 @@ public class Ambientes extends AppCompatActivity {
         final EditText ip = findViewById(R.id.ip);
         final ImageButton btnLuz = findViewById(R.id.btnLuz);
 
-        btnLuz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-
-            }
-        });
 
 
     }
