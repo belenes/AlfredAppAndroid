@@ -6,16 +6,12 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.os.Handler;
 import android.os.Message;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class Ambientes extends AppCompatActivity {
+public class Menu extends AppCompatActivity {
 
     EditText editTextAddress, editTextPort;
     ImageButton buttonConnect;
@@ -26,7 +22,7 @@ public class Ambientes extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ambientes);
+        setContentView(R.layout.menu);
 
         editTextAddress = (EditText) findViewById(R.id.address);
         editTextPort = (EditText) findViewById(R.id.port);
@@ -73,9 +69,9 @@ public class Ambientes extends AppCompatActivity {
         public static final int UPDATE_STATE = 0;
         public static final int UPDATE_MSG = 1;
         public static final int UPDATE_END = 2;
-        private Ambientes parent;
+        private Menu parent;
 
-        public UdpClientHandler(Ambientes parent) {
+        public UdpClientHandler(Menu parent) {
             super();
             this.parent = parent;
         }

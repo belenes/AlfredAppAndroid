@@ -14,12 +14,12 @@ public class UdpClientThread extends Thread {
     String dstAddress;
     int dstPort;
     private boolean running;
-    Ambientes.UdpClientHandler handler;
+    Menu.UdpClientHandler handler;
 
     DatagramSocket socket;
     InetAddress address;
 
-    public UdpClientThread(String addr, int port, Ambientes.UdpClientHandler handler) {
+    public UdpClientThread(String addr, int port, Menu.UdpClientHandler handler) {
         super();
         dstAddress = addr;
         dstPort = port;
@@ -34,12 +34,12 @@ public class UdpClientThread extends Thread {
     private void sendState(String state) {
         handler.sendMessage(
                 Message.obtain(handler,
-                        Ambientes.UdpClientHandler.UPDATE_STATE, state));
+                        Menu.UdpClientHandler.UPDATE_STATE, state));
     }
 
     @Override
     public void run() {
-        sendState("connecting...");
+        sendState("conectando...");
 
         running = true;
 
@@ -54,7 +54,7 @@ public class UdpClientThread extends Thread {
                     new DatagramPacket(buf, buf.length, address, dstPort);
             socket.send(packet);
 
-            sendState("connected");
+            sendState("conectado");
 
 
         } catch (UnknownHostException e) {
