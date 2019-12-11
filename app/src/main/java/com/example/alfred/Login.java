@@ -17,7 +17,6 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-
         final Button btnIngresar = findViewById(R.id.btnIngresar);
         final EditText usuario = findViewById(R.id.usuario);
         final EditText password = findViewById(R.id.password);
@@ -26,12 +25,12 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(Login.this, Ambientes.class);
+                Intent i = new Intent(Login.this, Ambientes.class);
 
-                Toast notificacion = Toast.makeText(getApplicationContext(), "Bienvenido a Alfred" , Toast.LENGTH_SHORT);
+                Toast notificacion = Toast.makeText(getApplicationContext(), "Bienvenido a Alfred" , Toast.LENGTH_LONG);
                 notificacion.show();
 
-                startActivity(intent);
+                startActivity(i);
             }
         });
     }
