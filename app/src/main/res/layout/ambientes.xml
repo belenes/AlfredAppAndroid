@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Ambientes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ambientes"
+                android:layout_centerInParent="true"
+                android:textColor="#0066CB"
+                android:textSize="40dp"/>
+        </RelativeLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:rowCount="3"
+            app:columnCount="3"
+            >
+
+            <RelativeLayout
+                app:layout_column="0"
+                app:layout_row="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/imghabitacion"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/habitacion" />
+
+                <Button
+                    android:id="@+id/btnhabitacion"
+                    android:textColor="#0066CB"
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imghabitacion"
+                    android:layout_centerInParent="true"
+                    android:text="Habitación" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:padding="15dp"
+                app:layout_column="1"
+                app:layout_row="0">
+
+                <ImageView
+                    android:id="@+id/imgbanio"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/banio" />
+
+                <Button
+                    android:id="@+id/btnbanio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgbanio"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:text="Baño"
+                    android:textColor="#0066CB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                app:layout_column="2"
+                app:layout_row="0"
+                android:padding="15dp"
+                >
+                <ImageView
+                    android:id="@+id/imgliving"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/living"
+                    />
+
+                <Button
+                    android:id="@+id/btnliving"
+                    android:background="@null"
+                    android:textColor="#0066CB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgliving"
+                    android:layout_centerInParent="true"
+                    android:text="Living"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="15dp"
+                app:layout_column="0"
+                app:layout_row="1">
+
+                <ImageView
+                    android:id="@+id/imgpatio"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/patio" />
+
+                <Button
+                    android:id="@+id/btnpatio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgpatio"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:text="Patio"
+                    android:textColor="#0066CB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                app:layout_column="2"
+                app:layout_row="1"
+                android:padding="15dp"
+                >
+                <ImageView
+                    android:id="@+id/imgcocina"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cocina"
+                    />
+
+                <Button
+                    android:id="@+id/btncocina"
+                    android:background="@null"
+                    android:textColor="#0066CB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgcocina"
+                    android:layout_centerInParent="true"
+                    android:text="Cocina"
+                    />
+            </RelativeLayout>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnatras1"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Atrás"
+                android:textColor="#FFFFFFFF" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

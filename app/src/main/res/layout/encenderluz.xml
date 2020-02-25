@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".Menu">
+    tools:context=".EncenderLuz">
 
     <LinearLayout
         android:orientation="vertical"
@@ -98,6 +98,22 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/state"
                 android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnatras3"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Atrás"
+                android:textColor="#FFFFFFFF" />
 
         </RelativeLayout>
 

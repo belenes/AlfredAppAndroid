@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MenuPrincipal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MENÚ"
+                android:layout_centerInParent="true"
+                android:textColor="#0066CB"
+                android:textSize="40dp"/>
+        </RelativeLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:rowCount="2"
+            app:columnCount="2"
+            >
+
+            <RelativeLayout
+                app:layout_column="0"
+                app:layout_row="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="18dp">
+
+                <ImageView
+                    android:id="@+id/imgconsumo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cosumo" />
+
+                <Button
+                    android:id="@+id/btnconsumo"
+                    android:textColor="#0066CB"
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgconsumo"
+                    android:layout_centerInParent="true"
+                    android:text="Consumo" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="167dp"
+                android:padding="18dp"
+                app:layout_column="1"
+                app:layout_row="0">
+
+                <ImageView
+                    android:id="@+id/imgmascotas"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/mascotas" />
+
+                <Button
+                    android:id="@+id/btnmascotas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgmascotas"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:text="Mascotas"
+                    android:textColor="#0066CB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                app:layout_column="0"
+                app:layout_row="1"
+                android:padding="18dp"
+                >
+            <ImageView
+                android:id="@+id/imgambientes"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ambientes"
+                />
+
+            <Button
+                android:id="@+id/btnambientes"
+                android:background="@null"
+                android:textColor="#0066CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgambientes"
+                android:layout_centerInParent="true"
+                android:text="Ambientes"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout
+                app:layout_column="1"
+                app:layout_row="1"
+                android:padding="18dp"
+                >
+            <ImageView
+                android:id="@+id/imgvivienda"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/viviendah"
+                 />
+
+            <Button
+                android:id="@+id/btnvivienda"
+                android:background="@null"
+                android:textColor="#0066CB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgvivienda"
+                android:layout_centerInParent="true"
+                android:text="Vivienda habitada"
+                 />
+            </RelativeLayout>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <Button
+            android:id="@+id/btnhistorico"
+            android:text="Histórico de actividades"
+            android:textColor="#0066CB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

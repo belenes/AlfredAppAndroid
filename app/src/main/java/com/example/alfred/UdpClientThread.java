@@ -14,12 +14,12 @@ public class UdpClientThread extends Thread {
     String dstAddress;
     int dstPort;
     private boolean running;
-    Menu.UdpClientHandler handler;
+    EncenderLuz.UdpClientHandler handler;
 
     DatagramSocket socket;
     InetAddress address;
 
-    public UdpClientThread(String addr, int port, Menu.UdpClientHandler handler) {
+    public UdpClientThread(String addr, int port, EncenderLuz.UdpClientHandler handler) {
         super();
         dstAddress = addr;
         dstPort = port;
@@ -34,7 +34,7 @@ public class UdpClientThread extends Thread {
     private void sendState(String state) {
         handler.sendMessage(
                 Message.obtain(handler,
-                        Menu.UdpClientHandler.UPDATE_STATE, state));
+                        EncenderLuz.UdpClientHandler.UPDATE_STATE, state));
     }
 
     @Override

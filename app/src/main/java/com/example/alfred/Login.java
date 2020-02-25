@@ -25,7 +25,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i = new Intent(Login.this, Menu.class);
+                Intent i = new Intent(Login.this, MenuPrincipal.class);
 
                 Toast notificacion = Toast.makeText(getApplicationContext(), "Bienvenido a Alfred" , Toast.LENGTH_LONG);
                 notificacion.show();
@@ -34,7 +34,4 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-
-
-
 }
